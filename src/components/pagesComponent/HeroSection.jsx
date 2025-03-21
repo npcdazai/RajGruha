@@ -8,6 +8,8 @@ const HeroSection = () => {
 
             <HStack justifyContent="space-between" w="100%" alignItems="flex-start" px={14} py={12} h="100%" >
                 <VStack bgColor="#F9FBFC" justifyContent="flex-start" px={4} w="40%" alignItems="center" h="100%">
+
+                    
                     <VStack w="100%" justifyContent="flex-start" alignItems="flex-start" >
                         <Text as={"h1"} lineHeight="60px" color="#1C1C1C" fontSize="xxx-large" fontWeight={500}>
                             Premium <span style={{ color: "#525FE1" }}>private coaching</span> for <br /> exceptional minds!
