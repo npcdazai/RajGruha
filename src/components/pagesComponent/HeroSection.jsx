@@ -64,7 +64,7 @@ const HeroSection = () => {
                         )
                     })}
                 </HStack>
-                <Circle bgColor="#FFCF59" position="absolute" h="162px" w="162px" bottom={"-4rem"} left={"-3rem"} />
+                <Circle bgColor="#FFCF59" position="absolute" h="162px" w="162px" bottom={"-4rem"} left={"-4rem"} />
                 <Circle bgColor="#FFCF59" position="absolute" h="124px" w="124px" top={"-4rem"} right={"-3rem"} />
             </HStack>
         </Box>
