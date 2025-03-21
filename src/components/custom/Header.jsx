@@ -27,7 +27,7 @@ const navItems = [
 
 const Header = () => {
     return (
-        <HStack bgColor="#F9FBFC" justifyContent="space-between" alignItems="center" px={8} >
+        <HStack position="sticky" top={0} zIndex={100} bgColor="#F9FBFC" justifyContent="space-between" alignItems="center" px={8} >
             <Image src="src/assets/icon.png" height="70px" width="auto" />
             <HStack>
                 {navItems.map((val) => {
