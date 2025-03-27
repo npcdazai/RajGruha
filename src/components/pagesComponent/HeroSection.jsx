@@ -4,6 +4,8 @@ import heroSideStar from "../../assets/img/heroSideStar.svg"
 import shapePng from "../../assets/shape.png"
 import redShape from "../../assets/redShape.svg"
 import manPng from "../../assets/man.png"
+import countsection from "../../assets/img/countsection.svg"
+import play from "../../assets/img/play.png"
 
 
 const values = [
@@ -45,7 +47,7 @@ const HeroSection = () => {
                             Join now
                         </Button>
                         <Button color="#1C1C1C" bgColor="#F9FBFC" >
-                            <Image src='src/assets/img/play.png' />
+                            <Image src={play} />
                             See how it works?
                         </Button>
                     </HStack>
@@ -56,7 +58,7 @@ const HeroSection = () => {
                     <Image position="absolute" src={redShape} bottom={16} left="80px" />
                 </VStack>
             </HStack>
-            <HStack  position="relative" w="100%" mt="-3rem" p={6} bgImage="url(src/assets/img/countsection.svg)" bgSize="cover" backgroundPosition="center" >
+            <HStack  position="relative" w="100%" mt="-3rem" p={6} bgImage={`url(${countsection})`} bgSize="cover" backgroundPosition="center" >
                 <HStack alignItems="center" gap={8} justifyContent="center" w="100%">
                     {values.map((val) => {
                         return (
