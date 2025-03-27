@@ -2,6 +2,7 @@ import { Box, Button, HStack, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
+import icon from "../../assets/icon.png"
 
 const navItems = [
     { id: 1, name: "Home", link: "/" },
@@ -18,7 +19,7 @@ const Header = () => {
             transition={{ duration: 0.5 }}
         >
             <HStack position="sticky" top={0} zIndex={100} bgColor="#F9FBFC" justifyContent="space-between" alignItems="center" px={8} >
-                <Image src="src/assets/icon.png" height="70px" width="auto" />
+                <Image src={icon} height="70px" width="auto" />
                 <HStack>
                     {navItems.map((val, index) => (
                         <motion.div 
