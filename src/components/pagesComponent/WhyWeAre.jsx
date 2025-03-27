@@ -48,19 +48,19 @@ const arr = [
 
 const WhyWeAre = () => {
   return (
-    <VStack w="100%" px={4} py={12} gap={8}>
+    <VStack w="100%" px={4} py={{ base: 6, md: 12 }} gap={8}>
       <VStack w="100%" gap={6} >
-        <Heading fontWeight={400} color="#1C1C1C" fontSize="5xl" ><Text as="span" color="#525FE1" fontWeight={700}>Why we are</Text> best from others?</Heading>
-        <Text w="80%" color="#333333" as="span" fontWeight={400} textAlign="center" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.....</Text>
+        <Heading fontWeight={400} color="#1C1C1C" fontSize={{ base: "2xl", md: "5xl" }} ><Text as="span" color="#525FE1" fontWeight={700}>Why we are</Text> best from others?</Heading>
+        <Text w="80%" color="#333333" as="span" fontWeight={400} textAlign="center" fontSize={{ base: "sm", md: "md" }} >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.....</Text>
       </VStack>
-      <Grid templateColumns="repeat(3, 1fr)" gap="6">
+      <Grid templateColumns={{ base: "1fr", sm: "repeat(2, 1fr)", md: "repeat(3, 1fr)" }} gap="6">
         {arr.map((val) => {
           return (
             <VStack
               bgColor={"#f9fbfc"} 
               rounded="lg"
               p={4}
-              width="360px"
+              width={{ base: "100%", sm: "280px", md: "360px" }}
               border="1px solid #dbdff5"
               height="236px"
               transition="all 0.3s ease-in-out"

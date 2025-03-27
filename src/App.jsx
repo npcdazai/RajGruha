@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Home from "./pages/Home"
 import Header from "./components/custom/Header"
 import { Box, Container } from "@chakra-ui/react"
+import {useBreakpointValue } from "@chakra-ui/react";
 
 const App = () => {
   return (

@@ -1,13 +1,19 @@
 import React from "react"
 import HeroSection from "../components/pagesComponent/HeroSection"
-import { Box } from "@chakra-ui/react"
+import { Box, useBreakpointValue } from "@chakra-ui/react"
 import WhyWeAre from "../components/pagesComponent/WhyWeAre"
+import HeroSectionMobile from "../components/Mobile/HeroSectionMobile"
 
-const Home = ()=>{
-    return(
+
+const Home = () => {
+    const Hero = useBreakpointValue({
+        base: <HeroSectionMobile />,
+        lg: <HeroSection />,
+    });
+    return (
         <Box bgColor="#F9FBFC" h="100%">
-            <HeroSection/>
-            <WhyWeAre/>
+            {Hero}
+            <WhyWeAre />
         </Box>
     )
 }
