@@ -1,5 +1,10 @@
 import { Box, Button, Circle, HStack, Image, Text, VStack } from '@chakra-ui/react'
 import React from 'react'
+import heroSideStar from "../../assets/img/heroSideStar.svg"
+import shapePng from "../../assets/shape.png"
+import redShape from "../../assets/redShape.svg"
+import manPng from "../../assets/man.png"
+
 
 const values = [
     {
@@ -21,7 +26,7 @@ const values = [
 const HeroSection = () => {
     return (
         <Box bgColor="#F9FBFC" position="relative" w={"100%"} h="100%" >
-            <Image src='src\assets\img\heroSideStar.svg' position="absolute" top={10} />
+            <Image src={heroSideStar} position="absolute" top={10} />
 
             <HStack justifyContent="space-between" w="100%" alignItems="flex-start" px={14} py={12} h="100%" >
                 <VStack bgColor="#F9FBFC" mt={20} justifyContent="flex-start" px={4} w="50%" alignItems="center" h="100%">
@@ -46,9 +51,9 @@ const HeroSection = () => {
                     </HStack>
                 </VStack>
                 <VStack position="relative" h="100vh" w="40%" overflow="hidden" >
-                    <Image src="/src/assets/shape.png" h="500px" />
-                    <Image position="absolute" top={28} zIndex={12} src="src/assets/man.png" h="106%" />
-                    <Image position="absolute" src="src/assets/redShape.svg" bottom={16} left="80px" />
+                    <Image src={shapePng} h="500px" />
+                    <Image position="absolute" top={28} zIndex={12} src={manPng} h="106%" />
+                    <Image position="absolute" src={redShape} bottom={16} left="80px" />
                 </VStack>
             </HStack>
             <HStack  position="relative" w="100%" mt="-3rem" p={6} bgImage="url(src/assets/img/countsection.svg)" bgSize="cover" backgroundPosition="center" >
